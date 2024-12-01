@@ -24,7 +24,7 @@ div{
     height: 20%;
     background-image: url("images/bg-pattern-quotation.svg");
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: top right;
 }
 .Jonathan{
     background-color: var(--VeryDarkGrayishBlue);
