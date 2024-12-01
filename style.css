@@ -1,0 +1,112 @@
+:root{
+    --ModerateViolet: hsl(263, 55%, 52%);
+    --VeryDarkGrayishBlue: hsl(217, 19%, 35%);
+    --VeryDarkBlackishBlue: hsl(219, 29%, 14%);
+    --White: hsl(0, 0%, 100%);
+    --LightGray: hsl(0, 0%, 81%);
+    --LightGrayishBlue: hsl(210, 46%, 95%); 
+}
+h2,h3,p{
+    padding: 2% 0;
+}
+body{
+    background-color: var(--LightGrayishBlue);
+    padding: 5%;
+    font-family: 'Barlow Semi Condensed' sans-serif;
+}
+div{
+    padding: 0 10% 10%;
+    border-radius: 15px;
+    margin: 10% 0;
+}
+.Daniel{
+    background-color: var(--ModerateViolet);
+    height: 20%;
+    background-image: url("images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.Jonathan{
+    background-color: var(--VeryDarkGrayishBlue);
+    height: 10%;
+}
+.Jeanette{
+    background-color: var(--White);
+    height: 10%;
+}
+.Patrick{
+    background-color: var(--VeryDarkBlackishBlue);
+    height: 15%;
+}
+.Kira{
+    background-color: var(--White);
+    height: 20%;
+}
+body{
+    color: var(--LightGray);
+}
+span{
+    padding-left: 80px;
+    opacity: 50%;
+}
+p{
+    opacity: 70%;
+}
+img{
+    position: relative;
+    top: 25px;
+    right: 0;
+    left: 0;
+    border-radius: 50px;
+    margin-right: 5%;
+}
+.Patrick img{
+    border: var(--ModerateViolet) solid;
+}
+.Kira, .Jeanette{
+   color: var(--VeryDarkBlackishBlue);
+}
+@media screen and (min-width:1024px){
+    *{
+        margin: 0;
+    }
+    .main{
+        width: 100%;
+        display: grid;
+        grid-template-areas: "Daniel Daniel jonathan   kira"
+                             "Jeanette patrick patrick kira";
+        grid-template-columns: 30% 20% 30% 30% ;
+        grid-template-rows: auto;         
+        font-size: 15px;       
+        transform: scaleX(0.75) scaleY(0.75);     
+    }
+    .Daniel{
+        grid-area: Daniel;
+        height: 75%;
+    }
+    .Jonathan{
+        grid-area: jonathan;
+        height: 80%;
+    }
+    .Jeanette{
+        grid-area: Jeanette;
+        height: 80%;
+    }
+    .Kira{
+        grid-area: kira ;
+        height: 90%;
+    }
+    .Patrick{
+        grid-area: patrick;
+        height: 75%;
+    }
+   div{
+    margin: 0 3% ;
+   }
+   span{
+    padding-left: 70px;
+}
+body{
+    padding: 0;
+}
+}
